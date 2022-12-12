@@ -1,21 +1,35 @@
-import { Link } from 'react-router-dom' 
+import {Link} from 'react-router-dom'
 
 import './index.css'
 
 const Header = () => (
-  <nav className="nav-header">
-    <div className="blog-container">
-      <h1 className="blog-title">My Blog</h1>
-      <ul className="nav-menu">
-        <li>
-          <Link to="/" className='link'>Home</Link>
-        </li>
-        <li>
-          <Link to="/about" className='link'>About</Link>
-        </li>
-          <Link to="/contact" className='link'>Contact</Link>
-      </ul>
+  <nav className="header-container">
+    <div className="logo-and-title-container">
+      <img
+        alt="wave"
+        className="logo"
+        src="https://assets.ccbp.in/frontend/react-js/wave-logo-img.png"
+      />
+      <h1 className="title">Wave</h1>
     </div>
+
+    <ul className="nav-items-list">
+      <li className="link-item">
+        <Link className="route-link" to="/">
+          Home
+        </Link>
+      </li>
+      <li className="link-item">
+        <Link className="route-link" to="/about">
+          About
+        </Link>
+      </li>
+      <li className="link-item">
+        <Link className="route-link" to="/contact">
+          Contact
+        </Link>
+      </li>
+    </ul>
   </nav>
 )
 

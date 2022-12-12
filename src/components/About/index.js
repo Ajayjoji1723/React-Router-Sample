@@ -9,7 +9,7 @@ const About = () => (
     />
     <h1 className="about-heading">About</h1>
     <p className="about-paragraph">
-      I love to create! I am a front-end web developer
+      I love to create! I am a frontend web developer
     </p>
   </div>
 )
